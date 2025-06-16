@@ -1,32 +1,30 @@
 <settings>
 <servers>
   <server>
-    <id>bestwork-bestwork-devops-cicd</id>
+    <id>bestwork-bestwork-devop-cicd</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
 </servers>
-<profiles>
+  <profiles>
   <profile>
-    <id>bestwork-bestwork-devops-cicd</id>
+    <id>bestwork-bestwork-devop-cicd</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>bestwork-bestwork-devops-cicd</id>
-        <url>https://bestwork-825765402401.d.codeartifact.ap-south-1.amazonaws.com/maven/bestwork-devops-cicd/</url>
+        <id>bestwork-bestwork-devop-cicd</id>
+        <url>https://bestwork-825765402401.d.codeartifact.ap-south-1.amazonaws.com/maven/bestwork-devop-cicd/</url>
       </repository>
     </repositories>
-  </profile>
-</profiles>
-<mirrors>
+  </profile><mirrors>
   <mirror>
-    <id>bestwork-bestwork-devops-cicd</id>
-    <name>bestwork-bestwork-devops-cicd</name>
-    <url>https://bestwork-825765402401.d.codeartifact.ap-south-1.amazonaws.com/maven/bestwork-devops-cicd/</url>
+    <id>bestwork-bestwork-devop-cicd</id>
+    <name>bestwork-bestwork-devop-cicd</name>
+    <url>https://bestwork-825765402401.d.codeartifact.ap-south-1.amazonaws.com/maven/bestwork-devop-cicd/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
-
+</profiles>
 </settings>
