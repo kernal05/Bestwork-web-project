@@ -19,8 +19,6 @@ phases:
       - mvn -s settings.xml package
 artifacts:
   files:
-    - artifacts:
-  files:
     - target/bestwork-web-project.war
     - appspec.yml
     - scripts/**/*
